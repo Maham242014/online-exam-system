@@ -23,7 +23,7 @@ def run_exam():
             print(str(i + 1) + ". " + item["options"][i])
         try:
             choice = int(input("Your answer: "))
-        except:
+       except ValueError:
             choice = 0
         if choice == item["answer"]:
             score = score + 1
