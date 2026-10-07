@@ -22,6 +22,7 @@ def run_exam():
         for i in range(len(item["options"])):
             print(str(i + 1) + ". " + item["options"][i])
         try:
+            # invalid input is treated as a wrong answer
             choice = int(input("Your answer: "))
         except ValueError:
             choice = 0
